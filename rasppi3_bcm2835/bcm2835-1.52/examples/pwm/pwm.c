@@ -13,10 +13,7 @@
 // sudo ./pwm
 //
 // Connect an LED between GPIO18 (pin 12) and GND to observe the LED changing in brightness
-//
-// Author: Mike McCauley
-// Copyright (C) 2013 Mike McCauley
-// $Id: RF22.h,v 1.21 2012/05/30 01:51:25 mikem Exp $
+
 
 #include <bcm2835.h>
 #include <stdio.h>
