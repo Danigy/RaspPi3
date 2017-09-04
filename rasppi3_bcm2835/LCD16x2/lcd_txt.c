@@ -1,10 +1,11 @@
 #include "lcd_txt.h"
 
+
 /*--------------- Initialize LCD ------------------*/
 void lcd_init(void)
 {
 	
-	HAL_Delay(30);
+	bcm2835_delay(30);
 	
 	PIN_LOW(D4_PIN);
 	PIN_HIGH(D5_PIN);
@@ -24,7 +25,7 @@ void lcd_init(void)
 /*--------------- Write To LCD ---------------*/
 void lcd_write(uint8_t type,uint8_t data)
 {
-	HAL_Delay(5);
+	bcm2835_delay(5);
 	if(type)
 	{
 		PIN_HIGH(RS_PIN);

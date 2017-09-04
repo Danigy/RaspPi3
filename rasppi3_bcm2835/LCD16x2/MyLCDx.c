@@ -1,3 +1,9 @@
+/*
+compile with following command:
+gcc -o lcd_txt.c MyLCD.c myLCD
+execute:
+./myLCD
+*/
 #include <bcm2835.h>
 #include "lcd_txt.h"
 
@@ -20,8 +26,6 @@ int main(int argc, char **argv)
   lcd_init();
   lcd_puts(0,0,(int8_t*)"Have a nice day!");
   lcd_puts(3,3,(int8_t*)"Hello World!");
-  sprintf(buffer,"%0.3f",var);
-  lcd_puts(1,0,(int8_t*)buffer);
   bcm2835_delay(2000);//delay(2000);
   lcd_clear();
   while (1)
