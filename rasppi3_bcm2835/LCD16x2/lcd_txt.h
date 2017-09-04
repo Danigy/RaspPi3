@@ -6,17 +6,11 @@
 /*------------- Define For Connection -----------------*/
 
 #define RS_PIN		RPI_GPIO_P1_26
-
 #define EN_PIN		RPI_GPIO_P1_19
-
 #define D7_PIN		RPI_GPIO_P1_13
-
 #define D6_PIN		RPI_GPIO_P1_16
-
 #define D5_PIN		RPI_GPIO_P1_18
-
 #define D4_PIN		RPI_GPIO_P1_11
-
 
 /*------------ Declaring Private Macro -----------------*/
 

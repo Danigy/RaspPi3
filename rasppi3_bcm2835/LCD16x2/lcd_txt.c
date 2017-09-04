@@ -1,18 +1,16 @@
 #include "lcd_txt.h"
 
-
 /*--------------- Initialize LCD ------------------*/
 void lcd_init(void)
 {
 	
 	bcm2835_delay(30);
-	
 	PIN_LOW(D4_PIN);
 	PIN_HIGH(D5_PIN);
 	PIN_LOW(D6_PIN);
 	PIN_LOW(D7_PIN);
 	PIN_LOW(RS_PIN);
-	
+
 	PIN_HIGH(EN_PIN);
 	PIN_LOW(EN_PIN);
 	
